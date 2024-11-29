@@ -35,11 +35,6 @@ export function WaitlistForm({ onClose }: WaitlistFormProps) {
       // Clear form
       setFirstName('');
       setEmail('');
-      
-      // Close form after success message
-      setTimeout(() => {
-        onClose();
-      }, 4000);
     } catch (err) {
       console.error('Error adding document: ', err);
       setError('Something went wrong. Please try again.');
@@ -52,6 +47,13 @@ export function WaitlistForm({ onClose }: WaitlistFormProps) {
     return (
       <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
         <div className="bg-white rounded-lg p-8 max-w-md w-full relative text-center">
+          <button 
+            onClick={onClose}
+            className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+            aria-label="Close"
+          >
+            ×
+          </button>
           <div className="flex flex-col items-center gap-4">
             <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
               <Check className="w-8 h-8 text-green-600" />
@@ -61,7 +63,12 @@ export function WaitlistForm({ onClose }: WaitlistFormProps) {
               <p className="text-gray-600">Thanks for joining our waitlist, {submittedName}!</p>
               <p className="text-gray-600">We'll keep you updated on our launch and early access opportunities.</p>
             </div>
-            <p className="text-sm text-gray-500">This message will close automatically in a few seconds...</p>
+            <button
+              onClick={onClose}
+              className="mt-4 px-6 py-2 bg-yellow-400 text-black rounded-md hover:bg-yellow-500 transition-colors"
+            >
+              Return to Roamly
+            </button>
           </div>
         </div>
       </div>

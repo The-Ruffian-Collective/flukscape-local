@@ -4,23 +4,23 @@ import { Map, Clock, Users, Star } from 'lucide-react';
 const benefits = [
   {
     icon: Map,
-    title: 'Personalised recommendations',
-    description: 'that match your travel style'
+    title: 'Uncover Hidden Gems',
+    description: 'Explore authentic destinations tailored to your tastes'
   },
   {
     icon: Clock,
-    title: 'Real-time updates',
-    description: 'for stress-free planning'
+    title: 'Travel, Your Way',
+    description: 'Enjoy flexible, dynamic plans that adapt to you'
   },
   {
     icon: Users,
-    title: 'Collaborative tools',
-    description: 'to plan with friends and family'
+    title: 'Stress-Free Group Adventures',
+    description: 'Effortlessly plan and decide together with your crew'
   },
   {
     icon: Star,
-    title: 'Trusted reviews',
-    description: 'from travellers like you'
+    title: 'Insights You Can Trust',
+    description: 'Get recommendations from locals who know best'
   }
 ];
 

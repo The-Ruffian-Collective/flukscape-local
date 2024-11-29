@@ -40,21 +40,21 @@ export default function App() {
         <FeatureSection
           id="destinations"
           headline="Go Beyond the Guidebooks"
-          body="From iconic landmarks to hidden treasures, explore destinations tailored to your unique tastes. Let AI take you deeper into the places you love - and discover the ones you didn't know existed."
+          body="From ancient temples to secret cafés, explore destinations through local eyes. Our AI matches your unique travel style with hidden wonders - helping you discover places most travelers never see."
           imageSrc="https://i.ibb.co/4fJ9tsK/bornraskull-Go-Beyond-the-Guidebooks-From-iconic-landmarks-t-94071cb6-16a8-4c59-bd44-c4ddf150baa5-0.png"
         />
 
         <FeatureSection
           id="cuisine"
-          headline="Savour Every Moment"
-          body="Craving unforgettable meals? From street food gems to fine dining, uncover local flavours that perfectly suit your appetite. Your next culinary adventure is just a click away."
+          headline="Taste the Extraordinary"
+          body="From hole-in-the-wall eateries to Michelin-starred gems, uncover culinary experiences that match your palate perfectly. Every meal becomes a memory, every dish tells a story."
           imageSrc="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&q=80"
         />
 
         <FeatureSection
           id="activities"
-          headline="Your Perfect Day, Planned"
-          body="Adrenaline junkie or relaxation seeker? Discover activities that match your vibe, from thrilling outdoor adventures to serene cultural escapes. Your itinerary, your way."
+          headline="Your Journey, Your Way"
+          body="Whether you seek thrilling adventures or peaceful retreats, our AI crafts each day to match your style. Experience the world exactly as you dream it."
           imageSrc="https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&q=80"
         />
 
