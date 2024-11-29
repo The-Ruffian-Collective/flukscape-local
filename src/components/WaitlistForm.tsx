@@ -13,6 +13,7 @@ export function WaitlistForm({ onClose }: WaitlistFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [error, setError] = useState('');
+  const [submittedName, setSubmittedName] = useState('');
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -28,6 +29,7 @@ export function WaitlistForm({ onClose }: WaitlistFormProps) {
       });
       
       console.log('Document written with ID: ', docRef.id);
+      setSubmittedName(firstName); // Store the name before clearing
       setIsSuccess(true);
       
       // Clear form
@@ -56,7 +58,7 @@ export function WaitlistForm({ onClose }: WaitlistFormProps) {
             </div>
             <h2 className="text-2xl font-bold text-gray-900">You're on the list!</h2>
             <div className="space-y-2">
-              <p className="text-gray-600">Thanks for joining our waitlist, {firstName}!</p>
+              <p className="text-gray-600">Thanks for joining our waitlist, {submittedName}!</p>
               <p className="text-gray-600">We'll keep you updated on our launch and early access opportunities.</p>
             </div>
             <p className="text-sm text-gray-500">This message will close automatically in a few seconds...</p>
