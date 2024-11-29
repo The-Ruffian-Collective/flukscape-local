@@ -3,13 +3,13 @@ import { getAnalytics } from "firebase/analytics";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAEERD14Z-BrORP837Ii3qF_L26mK7B4CM",
-  authDomain: "flukscape-local.firebaseapp.com",
-  projectId: "flukscape-local",
-  storageBucket: "flukscape-local.firebasestorage.app",
-  messagingSenderId: "242136897315",
-  appId: "1:242136897315:web:c1924a44e27319ef9ede96",
-  measurementId: "G-V7XMJR7GFV"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
