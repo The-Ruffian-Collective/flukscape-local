@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { db } from '../firebase';
 import { Check } from 'lucide-react';
+import { EarlyAccessCounter } from './EarlyAccessCounter';
 
 interface WaitlistFormProps {
   onClose: () => void;
@@ -87,6 +88,10 @@ export function WaitlistForm({ onClose }: WaitlistFormProps) {
         
         <h2 className="text-2xl font-bold mb-4">Join the Waitlist</h2>
         <p className="text-gray-600 mb-6">Be the first to experience unique travel adventures.</p>
+        
+        <div className="mb-6">
+          <EarlyAccessCounter />
+        </div>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
